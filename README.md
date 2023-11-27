@@ -29,6 +29,5 @@ Feel free to explore, modify, and build upon this project as needed!
 
 ## Contact Information
 
-[![Follow me on Twitter](twitter.png)](https://twitter.com/)
-[![Follow me on Linkedin](linkedin.jpg)](https://www.linkedin.com/in/bohdansmachylo/)
-[![Follow me on Instagram](instagram.png)](https://www.instagram.com/smachylo/)
+[![Follow me on Linkedin](./README/icons8-linkedin.svg)](https://www.linkedin.com/in/bohdansmachylo/)
+[![Follow me on Instagram](./README/icons8-instagram.svg)](https://www.instagram.com/smachylo/)
