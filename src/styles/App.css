@@ -1,0 +1,24 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input{
+  padding: 8px;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.todo-item{
+  font-size: 24px;
+}
+
+.todo-item p{
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item svg:not(:last-child){
+  margin-right: 10px;
+}
