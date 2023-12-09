@@ -20,25 +20,26 @@ interface TodoProps {
 export const Todo: React.FC<TodoProps> = ({ task, deleteTodo, lineText }) => {
   return (
     <div className="d-flex todo-item">
-      <p style={{ textDecoration: task.completed ? "line-through" : "none" }}>
-        <span>{task.task} -- {task.date.day}/{task.date.month}</span>
-        <div>
-      {task.completed ? (
-        <FontAwesomeIcon
-          className="border"
-          icon={faCheck}
-          onClick={() => lineText(task)}
-        />
-      ) : (
-        <FontAwesomeIcon
-          className="border"
-          icon={faTimes}
-          onClick={() => lineText(task)}
-        />
-      )}
-      <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(task.id)} />
-        </div>
-      </p>
+     <div style={{ textDecoration: task.completed ? "line-through" : "none" }}>
+  <span>{task.task} -- {task.date.day}/{task.date.month}</span>
+  <div>
+    {task.completed ? (
+      <FontAwesomeIcon
+        className="border"
+        icon={faCheck}
+        onClick={() => lineText(task)}
+      />
+    ) : (
+      <FontAwesomeIcon
+        className="border"
+        icon={faTimes}
+        onClick={() => lineText(task)}
+      />
+    )}
+    <FontAwesomeIcon icon={faTrash} onClick={() => deleteTodo(task.id)} />
+  </div>
+</div>
+
     </div>
   );
 };

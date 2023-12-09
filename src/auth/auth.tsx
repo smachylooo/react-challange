@@ -33,7 +33,11 @@ const AuthProvider = (): JSX.Element => {
 
   return (
     <div>
-      {user ? <LogedIn user={user.displayName} handleSignOut={handleSignOut}/> : <button onClick={handleLogIn}>Log In</button>}
+      {user ? (
+        <LogedIn user={user.displayName} email={user.email} phoneNumber={user.photoURL} handleSignOut={handleSignOut} />
+      ) : (
+        <button onClick={handleLogIn}>Log In</button>
+      )}
     </div>
   );
 };

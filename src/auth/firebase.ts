@@ -15,11 +15,11 @@ interface IfirebaseConfig{
 
 const firebaseConfig:IfirebaseConfig = {
   apiKey: API_KEY,
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  authDomain : "react-authfb.firebaseapp.com" , 
+  projectId : "react-authfb" , 
+  storageBucket : "react-authfb.appspot.com" , 
+  messagingSenderId : "490877149169" , 
+  appId : "1:490877149169:web:b9d373a5df090a50e72e50" 
 };
 
 export const app = initializeApp(firebaseConfig);
